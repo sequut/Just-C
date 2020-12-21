@@ -18,12 +18,10 @@ int perevod(char a, char b) {
         return 7;
 }
 
-int main()
-{
+int main() {
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
-
-
+    
     char aa[3];
     for (int i = 0; i < 3; i++)
         scanf("%c", &aa[i]);
