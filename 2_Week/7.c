@@ -12,7 +12,6 @@ int main() {
     scanf("%d %d %d", &l, &r, &k);
 
     for (int i = l; i<=r-k+1; i++)
-        
         for (int j = 1; j <= (r - l) / (k - 1); j++) 
             if ((i+(k-1)*j<=r) && (i + k*j > r))
                 sch++;
