@@ -1,0 +1,1 @@
+gcc -D DLL_BUILD -shared -o integerset.so -fPIC main.c

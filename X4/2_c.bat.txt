@@ -1,0 +1,1 @@
+cl /Fe:checked_solution.exe main.c libopenblas.lib matrixsqr.c

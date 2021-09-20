@@ -1,0 +1,6 @@
+gcc -c -DUSE_CRYPT zlib/minizip/unzip.c
+gcc -c zlib/*.c -I zlib
+ar rcs zlib.a *.o
+gcc -c zlib/minizip/unzip.c zlib/minizip/ioapi.c -I zlib/ -I zlib/minizip
+ar rcs minizip.a unzip.o ioapi.o
+gcc test.c zlib.a minizip.a -o checked_solution.exe -I zlib/ -I zlib/minizip

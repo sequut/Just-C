@@ -1,0 +1,1 @@
+cl /D DLL_BUILD decls.c /link /DLL /OUT:core.dll
